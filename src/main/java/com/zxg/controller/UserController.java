@@ -15,7 +15,7 @@ public class UserController {
     @Autowired
     private DataSource dataSource;
 
-    @RequestMapping("/getUser")
+    @RequestMapping("/getUser.do")
     public String getUser(){
 
         return "user is student";
