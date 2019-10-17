@@ -1,7 +1,6 @@
-package com.zxg.controller.config;
+package com.zxg.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,8 +10,8 @@ import javax.sql.DataSource;
  * @author zhangxiaoguang
  * @createtime 2019/10/16-12:24
  */
-@Configuration
-@EnableConfigurationProperties(JdbcProperties.class)
+//@Configuration
+//@EnableConfigurationProperties(JdbcProperties.class)
 public class JdbcConfig2 {
     @Bean
     public DataSource dataSource(JdbcProperties prop){
