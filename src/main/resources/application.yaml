@@ -1,7 +1,7 @@
 server:
   port: 8088
   servlet:
-    path: /
+    path: "*.do"
 logging:
   level:
     com.zxg: debug
