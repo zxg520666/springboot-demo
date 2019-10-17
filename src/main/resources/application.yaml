@@ -1,8 +1,8 @@
 server:
   port: 8088
   servlet:
-    path: "*.do"
+    path: /
 logging:
   level:
     com.zxg: debug
-    org.springframework: debug
+    #org.springframework: debug
