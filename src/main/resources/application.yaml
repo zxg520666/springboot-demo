@@ -1,7 +1,7 @@
 server:
   port: 8088
   servlet:
-    path: "*.do"
+    path: /
 logging:
   level:
     com.zxg: debug
@@ -9,6 +9,10 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/yun6
+    url: jdbc:mysql://192.168.184.130:3306/yun6
     username: root
     password: root
+#通用Mapper mabtis 整合
+mybatis:
+  #mapper-locations: mapper/*.xml
+  type-aliases-package: com.zxg.pojo

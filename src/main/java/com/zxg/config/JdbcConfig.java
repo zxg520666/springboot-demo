@@ -1,6 +1,6 @@
 package com.zxg.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 
@@ -21,7 +21,7 @@ public class JdbcConfig {
     private String username;
     @Value("${jdbc.password}")
     private String password;
-    @Bean
+   /* @Bean
     public DataSource dataSource(){
         DruidDataSource druidDataSource=new DruidDataSource();
         druidDataSource.setDriverClassName(driverClassName);
@@ -29,6 +29,6 @@ public class JdbcConfig {
         druidDataSource.setUsername(username);
         druidDataSource.setPassword(password);
         return druidDataSource;
-    }
+    }*/
 
 }
